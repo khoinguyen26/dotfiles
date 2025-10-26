@@ -1,0 +1,35 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "alt-e": "workspace::ToggleLeftDock",
+      "n": "project_panel::NewFile",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "shift-n": "project_panel::NewDirectory"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-e": "project_panel::ToggleFocus",
+      "g r": "editor::FindAllReferences",
+      "enter": "editor::OpenExcerpts"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "tab": "editor::Indent",
+      "shift-tab": "editor::Outdent",
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  }
+]
