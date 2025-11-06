@@ -31,5 +31,13 @@
       "shift-j": "editor::MoveLineDown",
       "shift-k": "editor::MoveLineUp"
     }
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
+    "bindings": {
+      "alt-h": "pane::ActivatePreviousItem",
+      "alt-l": "pane::ActivateNextItem",
+      "ctrl-j": "terminal_panel::ToggleFocus"
+    }
   }
 ]
