@@ -16,6 +16,12 @@
     }
   },
   {
+    "context": "GitPanel",
+    "bindings": {
+      "ctrl-shift-g": "git_panel::Close"
+    }
+  },
+  {
     "context": "Editor",
     "bindings": {
       "alt-e": "project_panel::ToggleFocus",
