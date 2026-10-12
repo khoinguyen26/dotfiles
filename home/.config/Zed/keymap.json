@@ -2,8 +2,9 @@
   {
     "context": "Workspace",
     "bindings": {
-      "alt-e": "project_panel::ToggleFocus"
-    }
+      "alt-e": "project_panel::ToggleFocus",
+      "alt-g": "git_panel::ToggleFocus",
+    },
   },
   {
     "context": "ProjectPanel && not_editing",
@@ -12,22 +13,22 @@
       "n": "project_panel::NewFile",
       "d": "project_panel::Delete",
       "r": "project_panel::Rename",
-      "shift-n": "project_panel::NewDirectory"
-    }
+      "shift-n": "project_panel::NewDirectory",
+    },
   },
   {
     "context": "GitPanel",
     "bindings": {
-      "ctrl-shift-g": "git_panel::Close"
-    }
+      "alt-g": "git_panel::Close",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
       "alt-e": "project_panel::ToggleFocus",
       "g r": "editor::FindAllReferences",
-      "enter": "editor::OpenExcerpts"
-    }
+      "enter": "editor::OpenExcerpts",
+    },
   },
   {
     "context": "vim_mode == visual",
@@ -35,15 +36,29 @@
       "tab": "editor::Indent",
       "shift-tab": "editor::Outdent",
       "shift-j": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp"
-    }
+      "shift-k": "editor::MoveLineUp",
+    },
   },
   {
     "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
     "bindings": {
       "alt-h": "pane::ActivatePreviousItem",
       "alt-l": "pane::ActivateNextItem",
-      "ctrl-j": "terminal_panel::ToggleFocus"
-    }
-  }
+      "ctrl-j": "terminal_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w j": "workspace::ActivatePaneDown",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-alt-o": "workspace::OpenFiles",
+    },
+  },
 ]
