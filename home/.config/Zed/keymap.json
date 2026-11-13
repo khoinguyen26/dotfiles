@@ -61,4 +61,11 @@
       "ctrl-alt-o": "workspace::OpenFiles",
     },
   },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "space p n": "multi_workspace::NextProject",
+      "space p p": "multi_workspace::PreviousProject",
+    }
+  }
 ]
